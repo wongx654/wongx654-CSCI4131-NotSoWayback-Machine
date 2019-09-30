@@ -1,0 +1,432 @@
+    body{
+      font-size: 11px;
+      background: transparent url(https://web.archive.org/web/20100620002758im_/http://cdn.myanimelist.net/images/bgs/mal-bg-4.jpg) no-repeat scroll center top;
+      margin-top: 0;
+      padding-top: 0;
+      font-family: Verdana, Arial;
+      background-color: white;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 68% 32%;
+        width: 970px;
+        /*margin: 550px;*/
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: auto;
+
+
+    }
+
+    #header {
+        font-size: 20pt;
+        text-align: top;
+        background-color: transparent;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 175px;
+    }
+        /* Menu Styles start here*/
+    #menu {
+        font-size: 9pt;
+        text-align: left;
+        background-color: #2e51a2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 34px;
+    }
+
+    #menu_right{
+      height: 34px;
+      width: 345px;
+      float: right;
+      text-align: right;
+      vertical-align: bottom;
+      color: #2e51a2;
+    }
+    #search{
+      padding-top: 6px;
+      padding-right: 5px;
+    }
+
+
+    #menu_left{
+      float: left;
+      width: 620px;
+      background: #2e51a2;
+    }
+
+    #menu_left #nav{
+      list-style: none;
+    }
+
+    #menu_left #nav .small{
+      float: left;
+      display: block;
+      width: 70px;
+      background: #2e51a2;
+      position: relative;
+      z-index: 90;
+      text-indent: 5px;
+    }
+    #nav .small a:hover, #nav .small:hover a{
+      background: #E1E7F5;
+      color: #000000;
+    }
+    #nav .wider .dropdown a:hover{
+      text-decoration: none;
+      background: #2e51a2;
+      color: #ffffff;
+    }
+    #nav .wider .dropdown a{
+      background: #E1E7F5;
+      display: block;
+      height: 15px;
+      padding: 8px 5px;
+      color: #000000;
+      font-weight: normal;
+    }
+    #nav .wider .dropdown{
+      width: 130px;
+    }
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    #menu_left #nav .wider{
+      display: none;
+      position: absolute;
+      left: 0;
+      display: none;
+      padding: 0;
+      list-style: none;
+    }
+    #menu_left #nav .small:hover > .wider{
+      display: block;
+      background: #E1E7F5;
+    }
+    #nav .small a{
+      display: block;
+      padding: 10px 5px 0 5px;
+      font-weight: bold;
+      height: 24px;
+      text-decoration: none;
+      text-align: left;
+      color: #ffffff;
+      background: #2e51a2;
+    }
+
+
+    /*community size*/
+    #menu_left #nav .Community {
+      float: left;
+      display: block;
+      width: 100px;
+      background: #E1E7F5;
+      position: relative;
+      z-index: 90;
+      text-indent: 5px;
+    }
+    #nav .Community a{
+      display: block;
+      padding: 10px 5px 0 5px;
+      font-weight: bold;
+      height: 24px;
+      text-decoration: none;
+      text-align: left;
+      color: #ffffff;
+      background: #2e51a2;
+    }
+    #nav .Community a:hover, #nav .Community:hover a{
+      background: #E1E7F5;
+      color: #000000;
+    }
+    #menu_left #nav .Community:hover > .wider{
+      display: block;
+      background: #E1E7F5;
+    }
+
+    /*Medium size*/
+    #menu_left #nav .medium {
+      float: left;
+      display: block;
+      width: 90px;
+      background: #E1E7F5;
+      position: relative;
+      z-index: 90;
+      text-indent: 5px;
+    }
+    #nav .medium a{
+      display: block;
+      padding: 10px 5px 0 5px;
+      font-weight: bold;
+      height: 24px;
+      text-decoration: none;
+      text-align: left;
+      color: #ffffff;
+      background: #2e51a2;
+    }
+    #nav .medium a:hover, #nav .medium:hover a{
+      background: #E1E7F5;
+      color: #000000;
+    }
+    #menu_left #nav .medium:hover > .wider{
+      display: block;
+      background: #E1E7F5;
+    }
+
+    /*Tiny Size*/
+    #menu_left #nav .tiny {
+      float: left;
+      display: block;
+      width: 50px;
+      background: #E1E7F5;
+      position: relative;
+      z-index: 90;
+      text-indent: 5px;
+    }
+    #nav .tiny a{
+      display: block;
+      padding: 10px 5px 0 5px;
+      font-weight: bold;
+      height: 24px;
+      text-decoration: none;
+      text-align: left;
+      color: #ffffff;
+      background: #2e51a2;
+    }
+    #nav .tiny a:hover, #nav .tiny:hover a{
+      background: #E1E7F5;
+      color: #000000;
+    }
+    #menu_left #nav .tiny:hover > .wider{
+      display: block;
+      background: #E1E7F5;
+    }
+
+    /*Smaller Size*/
+    #menu_left #nav .smaller {
+      float: left;
+      display: block;
+      width: 60px;
+      background: #E1E7F5;
+      position: relative;
+      z-index: 90;
+      text-indent: 5px;
+    }
+    #nav .smaller a{
+      display: block;
+      padding: 10px 5px 0 5px;
+      font-weight: bold;
+      height: 24px;
+      text-decoration: none;
+      text-align: left;
+      color: #ffffff;
+      background: #2e51a2;
+    }
+    #nav .smaller a:hover, #nav .smaller:hover a{
+      background: #E1E7F5;
+      color: #000000;
+    }
+    #menu_left #nav .smaller:hover > .wider{
+      display: block;
+      background: #E1E7F5;
+    }
+/* Menu Styles end here*/
+
+
+    #Welcome {
+        font-size: 20pt;
+        text-align: center;
+        background-color: pink;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    /* Right Panel*/
+    #panel_right {
+        font-size: 20pt;
+        text-align: left;
+        background-color: white;
+        grid-row-start: 4;
+        grid-column-start: 2;
+        grid-row-end: 7;
+        border-width: 0;
+        padding: 5px;
+        border-width: 0 1px 1px 0;
+        border-color: #EBEBEB;
+        border-style: solid;
+        background-color: #ffffff;
+        margin-top: 3px;
+        height: 797px;
+    }
+    .Clubs{
+      float: right;
+      font-weight: normal;
+      font-size: 11px;
+    }
+    .tdwidth55{
+      font-size: 11px;
+      line-height: 1.5em;
+      vertical-align: top;
+      text-align: center;
+      width: 55px;
+    }
+
+/* News Styles Start Here*/
+    #News {
+        font-size: 20pt;
+        text-align: left;
+        background-color: white;
+        height: 800px;
+        width: 645px;
+        padding: 5px;
+        border-width: 0 1px 1px 1px;
+        border-color: #EBEBEB;
+        border-style: solid;
+        background-color: #ffffff;
+    }
+    .normal_header{
+      font-weight: bold;
+      font-size: 12px;
+      margin-top: 10px;
+      margin-bottom: 0;
+      border-width: 0px 0px 1px 0px;
+      border-color: #bebebe;
+      border-style: solid;
+      color: #000000;
+      padding: 3px 0px;
+    }
+    #RSS{
+      float: right;
+      margin-top: 0;
+      font-weight: normal;
+      font-size: 13px;
+    }
+    .links1{
+      font-weight: normal;
+      font-size: 13px;
+    }
+    #orangewifi{
+      width: 11 ;
+      height: 11;
+    }
+    .spaceit{
+      margin-top: 3px;
+      padding-top: 3px 0;
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+    .Producer{
+      color: #1d439b;
+      text-decoration: none;
+    }
+    #Yamamoto{
+      margin-top: 6px;
+      font-size: 13px;
+    }
+    .lightLink{
+      color: #888888;
+    }
+    .borderClass{
+      border-style: solid;
+      border-color: #ebebeb;
+      border-width: 0 0 1px 0;
+      padding: 3px;
+    }
+    #span1{
+      line-height: 1.5em;
+      margin: 0;
+      padding: 0;
+      float: right;
+    }
+    table{
+      border: 0;
+      width: 100%;
+      border-collapse: separate;
+      border-color: grey;
+      padding: 0;
+      spacing: 0;
+    }
+    tbody{
+      display: table-row-group;
+      vertical-align: middle;
+      border-color: inherit;
+    }
+    tr{
+      display: table-row;
+      vertical-align: inherit;
+      border-color: inherit;
+    }
+    td{
+      font-size: 11px;
+      line-height: 1.5em;
+      vertical-align: top;
+    }
+    div.picSurround img{
+      background-color: #ffffff;
+      border: 1px solid #bebebe;
+      padding: 1px;
+      margin: 0px;
+      display: block;
+    }
+    .button_add{
+      padding: 1px 2px 1px 2px;
+      background-color: #f6f6f6;
+      border-bottom: 1px solid #ebebeb;
+      font-size: 9px;
+    }
+    .spaceit_pad{
+      padding: 3px 0;
+    }
+    .tdwidth50{
+      font-size: 11px;
+      line-height: 1.5em;
+      width: 50%;
+      vertical-align: top;
+    }
+    .mr7fl{
+      margin-right: 7px;
+      float: left;
+    }
+    .report{
+      float: right;
+    }
+    span{
+      line-height: 1.5em;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    #Footer {
+      font-family: Verdana, Arial;
+      font-size: 11px;
+      padding: 10px;
+      text-align: center;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    h1 {
+    text-align: left;
+    background-color: #e1e7f5;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-bottom-color: #1d439b;
+    border-left-color: #ebebeb;
+    border-right-color: #ebebeb;
+    padding: 5px;
+    margin: 0;
+    }
+    a:link{
+      text-decoration: none;
+    }
+    a:visited{
+      color: #1d439b;
+    }
